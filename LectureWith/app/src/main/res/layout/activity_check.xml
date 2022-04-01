@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".check">
+    <FrameLayout
+        android:layout_weight="9"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/round"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right|center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background=""
+            android:drawableLeft="@drawable/ipx"
+            android:paddingLeft="10dp"
+            android:text="   내 모든 녹음 항목"
+            android:textAlignment="textStart" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="409dp"
+        android:layout_height="620dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/recordLayout"
+        app:layout_constraintVertical_bias="0"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="9"
+
+        >
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="메뉴"/>
+    </LinearLayout>
+
+</LinearLayout>

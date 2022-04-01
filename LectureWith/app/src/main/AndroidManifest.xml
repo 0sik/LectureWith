@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LectureWith">
         <activity
+            android:name=".textpage"
+            android:exported="false" />
+        <activity
+            android:name=".check"
+            android:exported="false" />
+        <activity
+            android:name=".recording_page"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
